@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1a1a1a;
+      color: #fff;
+      overflow-x: hidden;
+      position: relative;
+      height: 100vh; /* Full viewport height */
+    }
+
+    /* Infinite star background animation */
+    @keyframes moveStars {
+      0% {
+        transform: translateY(0);
+      }
+
+      100% {
+        transform: translateY(-100%);
+      }
+    }
+
+    /* Starry background setup */
+    .star-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, #fff 2px, transparent 2px) center center;
+      background-size: 20px 20px;
+      animation: moveStars 30s linear infinite;
+      z-index: -1;
+      opacity: 0.3;
+    }
+
+    /* Main reservation form styling */
+    .reservation-form-content {
+      background-color: #2a2a2a;
+      padding: 30px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 600px;
+      margin: 50px auto;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .reservation-form-content h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #ff6600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .reservation-form-content label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14px;
+      text-align: left;
+      color: #fff;
+    }
+
+    .reservation-form-content input,
+    .reservation-form-content textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: 1px solid #444;
+      font-size: 16px;
+      color: #fff;
+      background-color: #333;
+    }
+
+    .reservation-form-content input:focus,
+    .reservation-form-content textarea:focus {
+      border-color: #ff6600;
+      outline: none;
+    }
+
+    .reservation-form-content button {
+      background-color: #ff6600;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .reservation-form-content button:hover {
+      background-color: #e65c00;
+    }
+
+    /* Back to Main Site Button */
+    .back-to-main {
+      display: block;
+      background-color: #ff6600;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-align: center;
+      margin: 20px auto;
+      width: 200px;
+      font-size: 16px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .back-to-main:hover {
+      background-color: #e65c00;
+    }
+
+    /* Footer styles */
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .reservation-form-content {
+        width: 90%;
+        padding: 20px;
+      }
+
+      .reservation-form-content h2 {
+        font-size: 24px;
+      }
+
+      .back-to-main {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Animation (Stars or Dots) -->
+  <div class="star-background"></div>
+
+  <!-- Reservation Form -->
+  <div class="reservation-form-content">
+    <h2>Make a Reservation</h2>
+    <form action="https://formspree.io/f/maykzjeb" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+      <label for="date">Reservation Date</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Reservation Time</label>
+      <input type="time" id="time" name="time" required>
+
+      <label for="message">Special Requests</label>
+      <textarea id="message" name="message" placeholder="Any special requests?" rows="4"></textarea>
+
+      <button type="submit">Submit Reservation</button>
+    </form>
+  </div>
+
+  <!-- Back to Main Site Button -->
+  <a href="index.html" class="back-to-main">Back to Main Site</a>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2024 'KASHMIR HOUSE. All rights reserved.</p>
+  </div>
+
+</body>
+
+</html>
