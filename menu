@@ -439,7 +439,7 @@ const menu = [
   {
     category: "Desserts",
     description:
-      "Terminez votre repas avec nos desserts maison, une fusion de saveurs indiennes traditionnelles et modernes.",
+      "Terminez votre repas avec nos desserts Réservation, une fusion de saveurs indiennes traditionnelles et modernes.",
     items: [
       {
         name: "Kulfi",
@@ -450,7 +450,7 @@ const menu = [
       {
         name: "Halwa",
         description:
-          "Un gâteau de semoule doux et parfumé, un classique indien fait maison.",
+          "Un gâteau de semoule doux et parfumé, un classique indien fait Réservation.",
         price: 4.50,
       },
       {
@@ -468,7 +468,7 @@ const menu = [
       {
         name: "Sorbets et glaces",
         description:
-          "Sorbets et glaces faits maison dans une variété de saveurs : vanille, mangue, citron-vert, coco, passion, pistache, chocolat, rose, fraise.",
+          "Sorbets et glaces faits Réservation dans une variété de saveurs : vanille, mangue, citron-vert, coco, passion, pistache, chocolat, rose, fraise.",
         price: 4.50,
       },
     ],
