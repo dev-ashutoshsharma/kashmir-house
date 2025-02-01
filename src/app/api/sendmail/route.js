@@ -86,7 +86,7 @@ const sendEmail = async (
 </ul>
 ${address ? `<p><strong>Address:</strong> ${address}</p>` : ""}
 ${zipcode ? `<p><strong>Zip:</strong> ${zipcode}</p>` : ""}
-<h2>Restaurant Indian Muskan</h2>
+<h2>Restaurant Kashmir House</h2>
       `,
     });
 
